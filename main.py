@@ -80,7 +80,8 @@ def hangmany():
                     print('You have', lives, 'lives left and the word is made up of', len(word), 'letters')
                     # what current word is (ie W - R D)
                     first_letter = word[0]
-                    print(f'The word start with letter "{first_letter}"')
+                    last_letter = word[-1]
+                    print(f'The word start with letter "{first_letter}" and ends with {last_letter}')
 
                     guessed_word = input('Guess a word: ').upper()
 
